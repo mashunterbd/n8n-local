@@ -64,7 +64,7 @@ services:
       - /mnt/data:/mnt/data
 
     # ✅ Automatically create /shared/tmp and /shared/pdf folders on startup
-    entrypoint: /bin/sh -c "mkdir -p /shared/tmp /shared/pdf && chmod -R 777 /shared && exec n8n"
+    entrypoint: /bin/sh -c "mkdir -p /shared/tmp /shared/pdf && exec n8n"
 
 volumes:
   n8n_storage:
